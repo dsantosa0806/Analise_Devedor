@@ -43,7 +43,7 @@ table = pd.read_excel('tables/devedor.xlsx')
 
 # Atribuindo dados para variáveis
 for i, devedor in enumerate(table['Devedor']):
-    qtde_aits_prevista  = int(table.loc[i,'Qtde'])
+    qtde_aits_prevista = int(table.loc[i,'Qtde'])
 
     if analisa(navegador,devedor,qtde_aits_prevista) == 1:
         acessa_tela_incial_analise_devedor(navegador)
